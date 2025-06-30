@@ -1,0 +1,1247 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData/"
+     xml:base="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:_sampleData="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#has_medicine -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#has_medicine">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Symptoms"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Name_of_medicine"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#treat_symp -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#treat_symp">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Treatment"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Symptoms"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#uses_medicine -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#uses_medicine">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Treatment"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Name_of_medicine"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#dosageAmount -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#dosageAmount">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Treatment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#duration -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#duration">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Treatment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#price -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#price">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Medicine"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Abdominal_cramps -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Abdominal_cramps">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Symptoms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Aconite -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Aconite">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Name_of_medicine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Arnica -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Arnica">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Name_of_medicine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Bloating -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Bloating">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Symptoms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Cantharis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Cantharis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Name_of_medicine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Cold -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Cold">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Symptoms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Constipation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Constipation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Symptoms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Digestive_issue -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Digestive_issue">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Symptoms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Ear_pain -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Ear_pain">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Symptoms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Fatigue -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Fatigue">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Symptoms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Fever -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Fever">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Symptoms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Headache -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Headache">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Symptoms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Kali_Phos -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Kali_Phos">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Name_of_medicine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Liver_disorder -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Liver_disorder">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Symptoms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Magnesia_Phosphoric -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Magnesia_Phosphoric">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Name_of_medicine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Medicine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Medicine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Sample"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Minor_injuries -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Minor_injuries">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Symptoms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Muscle_cramps -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Muscle_cramps">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Symptoms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Name_of_medicine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Name_of_medicine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Medicine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Natrum_Sulphuricum -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Natrum_Sulphuricum">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Name_of_medicine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Nausea -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Nausea">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Symptoms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Nux_Vomica -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Nux_Vomica">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Name_of_medicine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Painful_menstruation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Painful_menstruation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Symptoms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Rashes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Rashes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Symptoms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Rhus_toxicidendron -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Rhus_toxicidendron">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Name_of_medicine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Sample -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Sample"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Skin_irreuption -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Skin_irreuption">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Symptoms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Spigelia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Spigelia">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Name_of_medicine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Symptoms -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Symptoms">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Sample"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Thuja -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Thuja">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Name_of_medicine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Toothache -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Toothache">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Symptoms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Treatment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Treatment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Medicine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#UTI -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#UTI">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Symptoms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Flu(first_stage) -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Flu(first_stage)">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Symptoms"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Abdominal_cramps -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Abdominal_cramps">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Abdominal_cramps"/>
+        <_sampleData:has_medicine rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Magnesia_Phosphoric"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Aconite -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Aconite">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Aconite"/>
+        <_sampleData:price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">99</_sampleData:price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Arnica -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Arnica">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Arnica"/>
+        <_sampleData:price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">100</_sampleData:price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Bloating -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Bloating">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Bloating"/>
+        <_sampleData:has_medicine rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Kali_Phos"/>
+        <_sampleData:has_medicine rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Nux_Vomica"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Cantharis -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Cantharis">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Cantharis"/>
+        <_sampleData:price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">98</_sampleData:price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Cold -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Cold">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Cold"/>
+        <_sampleData:has_medicine rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Aconite"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Constipation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Constipation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Constipation"/>
+        <_sampleData:has_medicine rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Nux_Vomica"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Digestive_issue -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Digestive_issue">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Digestive_issue"/>
+        <_sampleData:has_medicine rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Rhus_toxicidendron"/>
+        <_sampleData:has_medicine rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Spigelia"/>
+        <_sampleData:has_medicine rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Thuja"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Ear_pain -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Ear_pain">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Ear_pain"/>
+        <_sampleData:has_medicine rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Spigelia"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Fatigue -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Fatigue">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Fatigue"/>
+        <_sampleData:has_medicine rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Kali_Phos"/>
+        <_sampleData:has_medicine rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Rhus_toxicidendron"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Fever -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Fever">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Fever"/>
+        <_sampleData:has_medicine rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Aconite"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Flu -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Flu">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Flu(first_stage)"/>
+        <_sampleData:has_medicine rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Aconite"/>
+        <rdfs:label>Flu</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Headache -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Headache">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Headache"/>
+        <_sampleData:has_medicine rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Magnesia_Phosphoric"/>
+        <_sampleData:has_medicine rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Natrum_Sulphuricum"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Kali_Phos -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Kali_Phos">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Kali_Phos"/>
+        <_sampleData:price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">108</_sampleData:price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Liver_disorder -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Liver_disorder">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Liver_disorder"/>
+        <_sampleData:has_medicine rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Natrum_Sulphuricum"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Magnesia_Phosphoric -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Magnesia_Phosphoric">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Magnesia_Phosphoric"/>
+        <_sampleData:price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">107</_sampleData:price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Muscle_cramp -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Muscle_cramp">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Muscle_cramps"/>
+        <_sampleData:has_medicine rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Arnica"/>
+        <_sampleData:has_medicine rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Magnesia_Phosphoric"/>
+        <rdfs:label>Muscle cramp</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Natrum_Sulphuricum -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Natrum_Sulphuricum">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Natrum_Sulphuricum"/>
+        <_sampleData:price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">130</_sampleData:price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Nausea -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Nausea">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Nausea"/>
+        <_sampleData:has_medicine rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Kali_Phos"/>
+        <_sampleData:has_medicine rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Nux_Vomica"/>
+        <_sampleData:has_medicine rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Rhus_toxicidendron"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Nux_Vomica -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Nux_Vomica">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Nux_Vomica"/>
+        <_sampleData:price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">110</_sampleData:price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Rashes -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Rashes">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Rashes"/>
+        <_sampleData:has_medicine rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Rhus_toxicidendron"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Rhus_toxicidendron -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Rhus_toxicidendron">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Rhus_toxicidendron"/>
+        <_sampleData:price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">118</_sampleData:price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Skin_irreuption -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Skin_irreuption">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Skin_irreuption"/>
+        <_sampleData:has_medicine rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Cantharis"/>
+        <_sampleData:has_medicine rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Thuja"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Spigelia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Spigelia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Spigelia"/>
+        <_sampleData:price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">95</_sampleData:price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Thuja -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Thuja">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Thuja"/>
+        <_sampleData:price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">144</_sampleData:price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Toothache -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Toothache">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Toothache"/>
+        <_sampleData:has_medicine rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Arnica"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Treatment10 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Treatment10">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Treatment"/>
+        <_sampleData:treat_symp rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Digestive_issue"/>
+        <_sampleData:uses_medicine rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Thuja"/>
+        <_sampleData:dosageAmount>6x</_sampleData:dosageAmount>
+        <_sampleData:duration>2-3 times daily</_sampleData:duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#UTI -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#UTI">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#UTI"/>
+        <_sampleData:has_medicine rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Cantharis"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#minor_injuries -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#minor_injuries">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Minor_injuries"/>
+        <_sampleData:has_medicine rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Arnica"/>
+        <rdfs:label>Minor injuries</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#painful_menstruation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#painful_menstruation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Painful_menstruation"/>
+        <_sampleData:has_medicine rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Magnesia_Phosphoric"/>
+        <rdfs:label>painful menstruation</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#treatmednt41 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#treatmednt41">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Treatment"/>
+        <_sampleData:treat_symp rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#UTI"/>
+        <_sampleData:uses_medicine rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Cantharis"/>
+        <_sampleData:dosageAmount>6c(mild)</_sampleData:dosageAmount>
+        <_sampleData:duration>2-3 times daily</_sampleData:duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#treatmen2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#treatmen2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Treatment"/>
+        <_sampleData:treat_symp rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Abdominal_cramps"/>
+        <_sampleData:uses_medicine rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Magnesia_Phosphoric"/>
+        <_sampleData:dosageAmount>6x(mild)</_sampleData:dosageAmount>
+        <_sampleData:duration>2-4 times daily</_sampleData:duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#treatment1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#treatment1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Treatment"/>
+        <_sampleData:treat_symp rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Flu"/>
+        <_sampleData:uses_medicine rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Aconite"/>
+        <_sampleData:dosageAmount>30c</_sampleData:dosageAmount>
+        <_sampleData:duration>3-4 times daily</_sampleData:duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#treatment11 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#treatment11">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Treatment"/>
+        <_sampleData:treat_symp rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Digestive_issue"/>
+        <_sampleData:uses_medicine rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Rhus_toxicidendron"/>
+        <_sampleData:dosageAmount>6x(mild)</_sampleData:dosageAmount>
+        <_sampleData:duration>2-3 times daily</_sampleData:duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#treatment12 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#treatment12">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Treatment"/>
+        <_sampleData:treat_symp rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Digestive_issue"/>
+        <_sampleData:uses_medicine rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Rhus_toxicidendron"/>
+        <_sampleData:dosageAmount>30c(strong)</_sampleData:dosageAmount>
+        <_sampleData:duration>every 2-4 hours</_sampleData:duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#treatment13 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#treatment13">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Treatment"/>
+        <_sampleData:treat_symp rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Ear_pain"/>
+        <_sampleData:uses_medicine rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Spigelia"/>
+        <_sampleData:dosageAmount>6x(mild)</_sampleData:dosageAmount>
+        <_sampleData:duration>2-4 times daily</_sampleData:duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#treatment14 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#treatment14">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Treatment"/>
+        <_sampleData:treat_symp rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Ear_pain"/>
+        <_sampleData:uses_medicine rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Spigelia"/>
+        <_sampleData:dosageAmount>30c(strong)</_sampleData:dosageAmount>
+        <_sampleData:duration>every 2-4 hours</_sampleData:duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#treatment15 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#treatment15">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Treatment"/>
+        <_sampleData:treat_symp rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Fatigue"/>
+        <_sampleData:uses_medicine rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Rhus_toxicidendron"/>
+        <_sampleData:dosageAmount>30c</_sampleData:dosageAmount>
+        <_sampleData:duration>every 2-4 days</_sampleData:duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#treatment16 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#treatment16">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Treatment"/>
+        <_sampleData:treat_symp rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Fatigue"/>
+        <_sampleData:uses_medicine rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Kali_Phos"/>
+        <_sampleData:dosageAmount>30c</_sampleData:dosageAmount>
+        <_sampleData:duration>every 2-4 hours</_sampleData:duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#treatment17 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#treatment17">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Treatment"/>
+        <_sampleData:treat_symp rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Fever"/>
+        <_sampleData:uses_medicine rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Aconite"/>
+        <_sampleData:dosageAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">30c</_sampleData:dosageAmount>
+        <_sampleData:duration>4-6 times daily</_sampleData:duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#treatment18 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#treatment18">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Treatment"/>
+        <_sampleData:treat_symp rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Headache"/>
+        <_sampleData:uses_medicine rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Magnesia_Phosphoric"/>
+        <_sampleData:dosageAmount>6x(mild)</_sampleData:dosageAmount>
+        <_sampleData:duration>2-3 times daily</_sampleData:duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#treatment19 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#treatment19">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Treatment"/>
+        <_sampleData:treat_symp rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Headache"/>
+        <_sampleData:uses_medicine rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Magnesia_Phosphoric"/>
+        <_sampleData:dosageAmount>30c(strong)</_sampleData:dosageAmount>
+        <_sampleData:duration>every 2-4 times</_sampleData:duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#treatment20 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#treatment20">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Treatment"/>
+        <_sampleData:treat_symp rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Headache"/>
+        <_sampleData:uses_medicine rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Natrum_Sulphuricum"/>
+        <_sampleData:dosageAmount>6x(mild)</_sampleData:dosageAmount>
+        <_sampleData:duration>2-4 times daily</_sampleData:duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#treatment21 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#treatment21">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Treatment"/>
+        <_sampleData:treat_symp rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Headache"/>
+        <_sampleData:uses_medicine rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Natrum_Sulphuricum"/>
+        <_sampleData:dosageAmount>30c(strong)</_sampleData:dosageAmount>
+        <_sampleData:duration>every 2-4 hours</_sampleData:duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#treatment22 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#treatment22">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Treatment"/>
+        <_sampleData:treat_symp rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Liver_disorder"/>
+        <_sampleData:uses_medicine rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Natrum_Sulphuricum"/>
+        <_sampleData:dosageAmount>6x(mild)</_sampleData:dosageAmount>
+        <_sampleData:duration>2-3 times daily</_sampleData:duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#treatment23 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#treatment23">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Treatment"/>
+        <_sampleData:treat_symp rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Liver_disorder"/>
+        <_sampleData:uses_medicine rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Natrum_Sulphuricum"/>
+        <_sampleData:dosageAmount>30c(strong)</_sampleData:dosageAmount>
+        <_sampleData:duration>every 2-4 times</_sampleData:duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#treatment24 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#treatment24">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Treatment"/>
+        <_sampleData:treat_symp rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#minor_injuries"/>
+        <_sampleData:uses_medicine rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Arnica"/>
+        <_sampleData:dosageAmount>6c(mild)</_sampleData:dosageAmount>
+        <_sampleData:duration>2-4 times daily</_sampleData:duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#treatment25 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#treatment25">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Treatment"/>
+        <_sampleData:treat_symp rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#minor_injuries"/>
+        <_sampleData:uses_medicine rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Arnica"/>
+        <_sampleData:dosageAmount>30c(strong)</_sampleData:dosageAmount>
+        <_sampleData:duration>every 2-4 times</_sampleData:duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#treatment26 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#treatment26">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Treatment"/>
+        <_sampleData:treat_symp rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Muscle_cramp"/>
+        <_sampleData:uses_medicine rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Arnica"/>
+        <_sampleData:dosageAmount>6x(mild)</_sampleData:dosageAmount>
+        <_sampleData:duration>2-4 times daily</_sampleData:duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#treatment27 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#treatment27">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Treatment"/>
+        <_sampleData:treat_symp rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Muscle_cramp"/>
+        <_sampleData:uses_medicine rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Arnica"/>
+        <_sampleData:dosageAmount>30c(strong)</_sampleData:dosageAmount>
+        <_sampleData:duration>every 2-4 times</_sampleData:duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#treatment28 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#treatment28">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Treatment"/>
+        <_sampleData:treat_symp rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Muscle_cramp"/>
+        <_sampleData:uses_medicine rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Magnesia_Phosphoric"/>
+        <_sampleData:dosageAmount>30c</_sampleData:dosageAmount>
+        <_sampleData:duration>every 2-4 times</_sampleData:duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#treatment29 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#treatment29">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Treatment"/>
+        <_sampleData:treat_symp rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Nausea"/>
+        <_sampleData:uses_medicine rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Kali_Phos"/>
+        <_sampleData:dosageAmount>6x(mild)</_sampleData:dosageAmount>
+        <_sampleData:duration>2-4 times daily</_sampleData:duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#treatment3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#treatment3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Treatment"/>
+        <_sampleData:treat_symp rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Abdominal_cramps"/>
+        <_sampleData:uses_medicine rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Magnesia_Phosphoric"/>
+        <_sampleData:dosageAmount>30c(strong)</_sampleData:dosageAmount>
+        <_sampleData:duration>every 2-4 hours</_sampleData:duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#treatment30 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#treatment30">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Treatment"/>
+        <_sampleData:treat_symp rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Nausea"/>
+        <_sampleData:uses_medicine rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Nux_Vomica"/>
+        <_sampleData:dosageAmount>30c(strong)</_sampleData:dosageAmount>
+        <_sampleData:duration>every 2-4 times</_sampleData:duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#treatment31 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#treatment31">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Treatment"/>
+        <_sampleData:treat_symp rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Nausea"/>
+        <_sampleData:uses_medicine rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Rhus_toxicidendron"/>
+        <_sampleData:dosageAmount>6x</_sampleData:dosageAmount>
+        <_sampleData:duration>2-4 times daily</_sampleData:duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#treatment32 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#treatment32">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Treatment"/>
+        <_sampleData:treat_symp rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#painful_menstruation"/>
+        <_sampleData:uses_medicine rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Magnesia_Phosphoric"/>
+        <_sampleData:dosageAmount>6x(mild)</_sampleData:dosageAmount>
+        <_sampleData:duration>2-4 times daily</_sampleData:duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#treatment33 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#treatment33">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Treatment"/>
+        <_sampleData:treat_symp rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#painful_menstruation"/>
+        <_sampleData:uses_medicine rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Magnesia_Phosphoric"/>
+        <_sampleData:dosageAmount>30c(strong)</_sampleData:dosageAmount>
+        <_sampleData:duration>every 2-4 times</_sampleData:duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#treatment34 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#treatment34">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Treatment"/>
+        <_sampleData:treat_symp rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Rashes"/>
+        <_sampleData:uses_medicine rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Rhus_toxicidendron"/>
+        <_sampleData:dosageAmount>6x(mild)</_sampleData:dosageAmount>
+        <_sampleData:duration>2-4 times daily</_sampleData:duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#treatment35 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#treatment35">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Treatment"/>
+        <_sampleData:treat_symp rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Rashes"/>
+        <_sampleData:uses_medicine rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Rhus_toxicidendron"/>
+        <_sampleData:dosageAmount>30c(strong)</_sampleData:dosageAmount>
+        <_sampleData:duration>every 2-4 times</_sampleData:duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#treatment36 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#treatment36">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Treatment"/>
+        <_sampleData:treat_symp rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Skin_irreuption"/>
+        <_sampleData:uses_medicine rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Cantharis"/>
+        <_sampleData:dosageAmount>6x(mild)</_sampleData:dosageAmount>
+        <_sampleData:duration>2-4 times daily</_sampleData:duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#treatment37 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#treatment37">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Treatment"/>
+        <_sampleData:treat_symp rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Skin_irreuption"/>
+        <_sampleData:uses_medicine rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Cantharis"/>
+        <_sampleData:dosageAmount>30c(strong)</_sampleData:dosageAmount>
+        <_sampleData:duration>every 2-4 times</_sampleData:duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#treatment38 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#treatment38">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Treatment"/>
+        <_sampleData:treat_symp rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Skin_irreuption"/>
+        <_sampleData:uses_medicine rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Thuja"/>
+        <_sampleData:dosageAmount>30c(strong)</_sampleData:dosageAmount>
+        <_sampleData:duration>every 2-4 times</_sampleData:duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#treatment39 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#treatment39">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Treatment"/>
+        <_sampleData:treat_symp rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Skin_irreuption"/>
+        <_sampleData:uses_medicine rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Thuja"/>
+        <_sampleData:dosageAmount>6x(mild</_sampleData:dosageAmount>
+        <_sampleData:duration>2-4 times daily</_sampleData:duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#treatment4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#treatment4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Treatment"/>
+        <_sampleData:treat_symp rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Bloating"/>
+        <_sampleData:uses_medicine rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Nux_Vomica"/>
+        <_sampleData:dosageAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30c</_sampleData:dosageAmount>
+        <_sampleData:duration>every 2-4 hours</_sampleData:duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#treatment40 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#treatment40">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Treatment"/>
+        <_sampleData:treat_symp rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Toothache"/>
+        <_sampleData:uses_medicine rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Arnica"/>
+        <_sampleData:dosageAmount>30c</_sampleData:dosageAmount>
+        <_sampleData:duration>every 2-4 times</_sampleData:duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#treatment42 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#treatment42">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Treatment"/>
+        <_sampleData:treat_symp rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#UTI"/>
+        <_sampleData:uses_medicine rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Cantharis"/>
+        <_sampleData:dosageAmount>30c(strong)</_sampleData:dosageAmount>
+        <_sampleData:duration>every 2-4 hours</_sampleData:duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#treatment5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#treatment5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Treatment"/>
+        <_sampleData:treat_symp rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Bloating"/>
+        <_sampleData:uses_medicine rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Kali_Phos"/>
+        <_sampleData:dosageAmount>6x(mild)</_sampleData:dosageAmount>
+        <_sampleData:duration>2-4 times daily</_sampleData:duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#treatment6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#treatment6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Treatment"/>
+        <_sampleData:treat_symp rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Bloating"/>
+        <_sampleData:uses_medicine rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Kali_Phos"/>
+        <_sampleData:dosageAmount>30c(strong)</_sampleData:dosageAmount>
+        <_sampleData:duration>every 2-4 hours</_sampleData:duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#treatment7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#treatment7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Treatment"/>
+        <_sampleData:treat_symp rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Cold"/>
+        <_sampleData:uses_medicine rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Aconite"/>
+        <_sampleData:dosageAmount>30c</_sampleData:dosageAmount>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#treatment8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#treatment8">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Treatment"/>
+        <_sampleData:treat_symp rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Constipation"/>
+        <_sampleData:uses_medicine rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Nux_Vomica"/>
+        <_sampleData:dosageAmount>30c</_sampleData:dosageAmount>
+        <_sampleData:duration>every 2-4 hours</_sampleData:duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#treatment9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#treatment9">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Treatment"/>
+        <_sampleData:treat_symp rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Digestive_issue"/>
+        <_sampleData:uses_medicine rdf:resource="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Spigelia"/>
+        <_sampleData:dosageAmount>30c</_sampleData:dosageAmount>
+        <_sampleData:duration>2-3 times daily</_sampleData:duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Abdominal_cramps">
+        <rdfs:label>Abdominal_cramps</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Aconite">
+        <rdfs:label>Aconite</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Arnica">
+        <rdfs:label>Arnica</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Bloating">
+        <rdfs:label>Bloating</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Cantharis">
+        <rdfs:label>Cantharis</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Cold">
+        <rdfs:label>Cold</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Constipation">
+        <rdfs:label>Constipation</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Digestive_issue">
+        <rdfs:label>Digestive issue</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Ear_pain">
+        <rdfs:label>Ear pain</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Fatigue">
+        <rdfs:label>Fatigue</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Fever">
+        <rdfs:label>Fever</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Headache">
+        <rdfs:label>Headache</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Kali_Phos">
+        <rdfs:label>Kali Phos</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Liver_disorder">
+        <rdfs:label>Liver disorder</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Magnesia_Phosphoric">
+        <rdfs:label>Magneis Phosphoric</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Natrum_Sulphuricum">
+        <rdfs:label>Natrum Sulphuricum</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Nausea">
+        <rdfs:label>Nausea</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Nux_Vomica">
+        <rdfs:label>Nux Vomica</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Rashes">
+        <rdfs:label>Rashes</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Rhus_toxicidendron">
+        <rdfs:label>Rhus_toxicidendron</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Skin_irreuption">
+        <rdfs:label>Skin irreuption</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Spigelia">
+        <rdfs:label>Spigelia</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Thuja">
+        <rdfs:label>Thuja</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#Toothache">
+        <rdfs:label>Toothache</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2025/3/04_sampleData#UTI">
+        <rdfs:label>UTI</rdfs:label>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
